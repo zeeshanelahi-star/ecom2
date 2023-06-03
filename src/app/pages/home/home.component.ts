@@ -13,7 +13,7 @@ const ROWS_HEIGHT: {[id:number]:number}={ 1: 400, 3: 335, 4: 350};
 export class HomeComponent implements OnInit,OnDestroy{
  cols= 3;
 rowHeight = ROWS_HEIGHT[this.cols]
-category: string| undefined;
+category: string | undefined;
 products:Array<Product> | undefined;
 sort='desc';
 count='12';
@@ -35,7 +35,7 @@ constructor(private cartService:CartService, private storeService:StoreService){
     this.cols = closNum;
     this.rowHeight = ROWS_HEIGHT[this.cols]
   }
-  pCategory(newCategory:string){
+  onShowCategory(newCategory:string){
 this.category = newCategory
 this.getProducts();
   }

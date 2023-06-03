@@ -84,7 +84,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: #020005;
   }
   .black{
-    color: black;
+    color: rgb(100, 19, 206);
   }
   .min-h-full{
     min-height: 100vh;

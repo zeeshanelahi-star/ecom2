@@ -1,0 +1,44 @@
+<mat-toolbar class=" mx-auto max-w-7xl justify-between"   >
+    <a class="no-underline" routerLink="home"> Code WITH Zeeshan Bhatti</a>
+    
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon
+    [matBadge]="itemsQuantity"
+    [matBadgeHidden]="!itemsQuantity"
+    matBadgeColor="warn"
+    >shopping_cart</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <div class="p-3 divide-y"   >
+            <div  class=" justify-between flex pb-3  ">
+                <span class="mr-16 ">{{itemsQuantity}}items</span>
+                <a class="no-underline " routerLink="cart">View Cart</a>
+            </div>
+            <div *ngIf="cart.items.length" class="py-3">
+                <div 
+                *ngFor="let item of cart.items"
+                class="justify-between font-light  ">
+                    {{item.name}} x {{item.quantity}}
+                    <span class="font-bold"> {{ item.price | currency}}</span>
+                </div > 
+            </div>
+            <div class="justify-between py-3 font-light">
+                Total: 
+                <span class="font-bold"> {{ getTotal(cart.items) | currency}}</span>
+            </div>
+            <div  class="pt-3 justify-between">
+                <button class="bg-rose-600 text-white rounded-full w-9 h-9">
+                    <mat-icon>remove_shopping_cart</mat-icon>
+                </button>
+                <button 
+                routerLink="cart"
+                class="bg-green-600 text-white rounded-full w-9 h-9">
+                    <mat-icon> shopping_cart</mat-icon>
+                </button>
+            </div>
+        </div>
+    </mat-menu>
+    
+     
+
+</mat-toolbar>

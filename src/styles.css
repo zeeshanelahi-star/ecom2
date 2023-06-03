@@ -1,1 +1,167 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .no-underline {
+    text-decoration: none;
+  }
+  .mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .max-w-7xl{
+    max-width: 80rem;
+  }
+  .border-x {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: blue;
+    /* Set other desired border properties */
+  }
+  .border-y {
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-color: rgb(13, 164, 86);
+    /* Set other desired border properties */
+  }
+  .p-3{
+    padding: 16px;
+  }
+  .divide-y > *:not(:last-child) {
+    border-bottom: 1px solid greenyellow;
+  }
+  .pb-3 {
+    padding-bottom: 16px;
+  }
+  .flex {
+    display: flex;
+  }
+  .mr-16 {
+    margin-right: 70px;
+  }
+  .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  .font-light  {
+    font-weight: 300;
+  }
+  .mb-2 {
+    margin-bottom: 0.7rem;
+  }
+  .font-bold {
+    font-weight: bold;
+  }
+  .pt-3 {
+    padding-top: 0.75rem;
+  }
+  .bg-rose-600{
+    background-color: #D94664;
+  }
+  .text-white{
+    color: #fff;
+  }
+  .rounded-full{
+    border-radius: 50%;
+  }
+  .w-9{
+    width: 2.25rem;
+  }
+  .h-9{
+    height: 2.25rem;
+  }
+  .bg-green-600{
+    background-color: #34D399;
+  }
+  .black{
+    color: black;
+  }
+  .min-h-full{
+    min-height: 100vh;
+  }
+  .border-x{
+  border-left: 1px solid  ;
+  border-right: 1px solid ;
+  }
+  .p-6{
+    padding: 1rem;
+  }
+  .mb-4{
+    margin-bottom: 1rem;
+  }
+  .items-center{
+    display: flex;
+  align-items: center;
+  }
+.mb-1{
+  margin-bottom: 0.25rem;
+ }
+ .h-200px{
+  height: 200px;
+ }
+ .h-360px{
+  height: 360px;
+ }
+ .text-center{
+  text-align: center;
+ }
+ .truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hover\\:whitespace-normal:hover {
+  white-space: normal;
+}
+.w-full{
+  width: 100%;
+}
+.text-red-400{
+  color: #EF4444;
+}
+.text-gray-500{
+  color: #6B7280;
+}
+.m-auto{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.flex-col{
+  display: flex;
+flex-direction: column;
+}
+.px-8{
+  padding-left: 8px;
+padding-right: 8px;
+}
+.mat-elevetaion-z8{
+    box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  }
+  .my-5{
+    margin-top: 1.25rem;
+margin-bottom: 1.25rem;
+  }
+  .w-100px{
+    width: 100px;
+  }
+  .max-w-xs{
+    max-width: 20rem;
+  }
+  .py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .block{
+
+    display: block;
+  }

@@ -68,6 +68,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .bg-rose-600{
     background-color: #160577;
   }
+  .bg-green-600{
+    background-color: #020005;
+  }
+  
   .text-white{
     color: #fff;
   }
@@ -79,9 +83,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   }
   .h-9{
     height: 2.25rem;
-  }
-  .bg-green-600{
-    background-color: #020005;
   }
   .black{
     color: rgb(100, 19, 206);

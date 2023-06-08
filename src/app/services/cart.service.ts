@@ -46,7 +46,6 @@ export class CartService {
     })
   }
 
-
   getTotal(items: Array<CartItem>):number{
     return items.
     map((item)=> item.price * item.quantity)

@@ -14,18 +14,9 @@ export class CartComponent implements OnInit {
     quantity:1,
     id:1,
   
-  },
-  {
-    product: 'https://via.placeholder.com/150',
-    name: 'snikers',
-    price:  150,
-    quantity:1,
-    id:1,
-  } 
-]}
+  }]}
   
-  
- dataSource: Array<CartItem>=[];
+  dataSource: Array<CartItem>=[];
  displayedColumns: Array<string>=[
   'product',
    'name',
